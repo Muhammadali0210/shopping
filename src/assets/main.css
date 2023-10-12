@@ -1,0 +1,70 @@
+@import url("./color.css");
+@import url("../fonts/font.css");
+@import url("./text.css");
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#app {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  font-weight: normal;
+  position: relative;
+  z-index: 500;
+  background-color: #ffffff;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul,
+li{
+  list-style-type: none;
+}
+
+.cursor{
+  cursor: pointer;
+  transition: all .25s;
+}
+
+.container{
+  width: 1440px;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+}
+@media (max-width: 1920px) {
+  .container{
+    width: 1300px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .container{
+    width: 1140px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container{
+    width: 960px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container{
+    width: 88%;
+  }
+}
+
+@media (max-width: 500px) {
+  .container{
+    width: 92%;
+  }
+}
+

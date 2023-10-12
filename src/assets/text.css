@@ -1,0 +1,79 @@
+.text-fz120-lh150-fw400-a{
+    font-size: 120px;
+    line-height: 150px;
+    font-weight: 400;
+    font-family: AntonRegular;
+    color: var(--black);
+}
+.text-fz50-lh62-fw400-a{
+    font-size: 50px;
+    line-height: 62px;
+    font-weight: 400;
+    font-family: AntonRegular;
+    color: var(--black);
+}
+.text-fz24-lh30-fw400-a{
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 400;
+    font-family: AntonRegular;
+    color: var(--black);
+}
+.text-fz40-lh50-fw400-a{
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 400;
+    font-family: AntonRegular;
+    color: var(--black);
+}
+.text-fz24-lh30-fw800-p{
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 800;
+    font-family: PlusJakartaSans;
+    color: var(--black);
+    letter-spacing: -3% ;
+}
+.text-fz18-lh22-fw700-p{
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+    font-family: PlusJakartaSans;
+    color: var(--black);   
+}
+.text-fz16-lh20-fw700-p{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    font-family: PlusJakartaSans;
+    color: var(--black);   
+}
+.text-fz16-lh20-fw600-p{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    font-family: PlusJakartaSans;
+    color: var(--black);   
+}
+.text-fz14-lh24-fw500-p{
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: PlusJakartaSans;
+}
+.text-fz12-lh24-fw500-p{
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: PlusJakartaSans;
+}
+.form-likn{
+    color: var(#100D22);
+    font-family: PlusJakartaSans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 200% */
+    text-decoration-line: underline;
+    text-align: end;
+}

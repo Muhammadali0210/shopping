@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'PlusJakartaSans';
+    src: url('./plusjakartasans-bold-webfont.woff2') format('woff2'),
+         url('./plusjakartasans-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlusJakartaSans';
+    src: url('./plusjakartasans-bolditalic-webfont.woff2') format('woff2'),
+         url('./plusjakartasans-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlusJakartaSans';
+    src: url('./plusjakartasans-extrabold-webfont.woff2') format('woff2'),
+         url('./plusjakartasans-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlusJakartaSans';
+    src: url('./plusjakartasans-extrabolditalic-webfont.woff2') format('woff2'),
+         url('./plusjakartasans-extrabolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlusJakartaSans';
+    src: url('./plusjakartasans-extralight-webfont.woff2') format('woff2'),
+         url('./plusjakartasans-extralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlusJakartaSans';
+    src: url('./plusjakartasans-extralightitalic-webfont.woff2') format('woff2'),
+         url('./plusjakartasans-extralightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlusJakartaSans';
+    src: url('./plusjakartasans-italic-webfont.woff2') format('woff2'),
+         url('./plusjakartasans-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlusJakartaSans';
+    src: url('./plusjakartasans-light-webfont.woff2') format('woff2'),
+         url('./plusjakartasans-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlusJakartaSans';
+    src: url('./plusjakartasans-lightitalic-webfont.woff2') format('woff2'),
+         url('./plusjakartasans-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'PlusJakartaSans';
+    src: url('./plusjakartasans-medium-webfont.woff2') format('woff2'),
+         url('./plusjakartasans-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'PlusJakartaSans';
+    src: url('./plusjakartasans-mediumitalic-webfont.woff2') format('woff2'),
+         url('./plusjakartasans-mediumitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'PlusJakartaSans';
+    src: url('./plusjakartasans-regular-webfont.woff2') format('woff2'),
+         url('./plusjakartasans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

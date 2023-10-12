@@ -1,0 +1,43 @@
+:root {
+  --black: #100D22;
+  --secondary: rgba(171, 35, 143, 1), rgba(223, 50, 149, 1), rgba(254, 157, 155, 1), rgba(255, 119, 112, 1);
+  --green-succes: #00C566;
+  --red-error: #FF4747;
+  --yellow-warning: #FACC15;
+  --yellow: #FFC107;
+  --white: #ffffff;
+  --grey-fd: #Fdfdfd;
+  --grey-f6: #F6F6F6;
+  --grey-e6: #e6e6e6;
+  --grey-ed: #EDF2F7;
+  --grey-e3: #E3E9ED;
+  --grey-d1: #D1D8DD;
+  --grey-bf: #BFC6CC;
+  --grey-9c: #9CA4AB;
+  --grey-87: #878690;
+  --grey-66: #66707A;
+  --grey-43: #434E58;
+  --grey-1f: #1F2C37;
+}
+
+.text-black{
+  color: var(--black);
+}
+.text-secondary{
+  background-color: var(--red-error);
+  background-image: linear-gradient(179deg, var(--secondary));
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+.text-grey{
+  color: var(--grey-87);
+}
+.text-white{
+  color: var(--white);
+}
+.text-green{
+  color: var(--green-succes);
+}
