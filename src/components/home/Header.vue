@@ -14,5 +14,6 @@ export default {
 .header{
     padding-top: 50px;
     min-height: 100vh;
+    background-color: #adfadb;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <div class="navbar-box">
+    <div class="navbar-box" id="navbar">
         <div class="navbar">
             <Logo class="cursor"/>
             <ul class="nav_ul">
@@ -34,8 +34,9 @@
                     <img src="../icons/bag.svg" alt="bag">
                 </div>
             </div>
-            <div class="hamburger-icon cursor" @click="ham_active = !ham_active">
-                <img src="../icons/hamburger.svg" alt="ham">
+            <div class="hamburger-icon cursor" @click="hamburgerNav">
+                <img v-if="!ham_active" src="../icons/hamburger.svg" alt="ham">
+                <img v-else src="../icons/close.svg" alt="ham">
             </div>
         </div>
     </div>
@@ -67,6 +68,7 @@
         </div>
     </div>
 
+    
     <div class="nav_hamburger-page" :class="[{ham_active: ham_active}]">
         <div class="ham_show">
             <div class="ham_search">
@@ -113,7 +115,12 @@ export default {
         };
     },
     methods: {
-        
+        hamburgerNav(){
+            this.ham_active = !this.ham_active;
+            if(this.ham_active){
+                document.getElementById("app").style.position = 'fixed';
+            }
+        }
     },
 }
 </script>
@@ -123,6 +130,7 @@ export default {
     width: 100%;
     position: relative;
     height: 0;
+    z-index: 102;
 }
 .navbar{
     position: absolute;
@@ -175,6 +183,7 @@ export default {
     justify-content: center;
     border: 1px solid var(--grey-f6);
 }
+
 /* Login , register, bag, and hamburger pages */
 .nav_opacity{
     position: absolute;
@@ -237,7 +246,7 @@ export default {
     z-index: 101;
     position: absolute;
     top: 0;
-    padding-top: 85px;
+    padding-top: 83px;
     left: 0;
     right: 0;
     height: 0px;
@@ -245,15 +254,16 @@ export default {
     box-shadow: 0px 26px 38px 0px rgba(5, 4, 16, 0.13);
 }
 .nav_hamburger-page .ham_show{
-    background-color: var(--white);
-    height: 468px;
-    transform: translateY(-600px);
+    background-color: #fff;
+    height: 554px;
+    transform: translateY(-554px);
     transition: all 1s;
     width: 88%;
     padding-top: 4px;
     margin: 0 auto; 
 }
 .nav_hamburger-page.ham_active{
+    background-color: var(--white);
     height: 554px;
     position: fixed;
 }
@@ -296,7 +306,7 @@ export default {
 @media (max-width: 1024px) {
   .navbar{
     padding: 24px 0;
-    border-bottom: 1px solid red;
+    /* border-bottom: 1px solid red; */
   }
   .nav_ul{
     gap: 22px;
@@ -306,6 +316,9 @@ export default {
   }
 }
 @media (max-width: 768px) {
+    .navbar{
+        background-color: #fff;
+    }
     .nav_ul{
         display: none;
     }

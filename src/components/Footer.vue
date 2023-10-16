@@ -25,12 +25,10 @@
                 <div class="text-fz14-lh24-fw500-p text-grey cursor">Blogs </div>
             </div>
             <div class="footer-nav">
-                <div class="text-fz14-lh24-fw500-p text-black">Menu</div>
-                <div class="text-fz14-lh24-fw500-p text-grey cursor">Home</div>
-                <div class="text-fz14-lh24-fw500-p text-grey cursor">Shop</div>
-                <div class="text-fz14-lh24-fw500-p text-grey cursor">Wishlist</div>
-                <div class="text-fz14-lh24-fw500-p text-grey cursor">Order Tracking</div>
-                <div class="text-fz14-lh24-fw500-p text-grey cursor">Blogs </div>
+                <div class="text-fz14-lh24-fw500-p text-black">Quick Links</div>
+                <div class="text-fz14-lh24-fw500-p text-grey cursor">login</div>
+                <div class="text-fz14-lh24-fw500-p text-grey cursor">Register</div>
+                <div class="text-fz14-lh24-fw500-p text-grey cursor">My Cart</div>
             </div>
         </div>
         <div class="footer-row">
@@ -123,7 +121,6 @@ export default {
 .footer-email_button .f_e_m{
     padding: 12px 28px;
 }
-
 .foter-network-icon-wrap{
     margin-top: 32px;
 }
@@ -143,4 +140,18 @@ export default {
     justify-content: center;
 }
 
+@media (max-width: 1200px) {
+    .footer-wrap{
+        flex-direction: column;
+        gap: 30px;
+        align-items: start;
+        padding-left: 120px;
+    }
+}
+@media (max-width: 768px) {
+    .footer-wrap{
+        gap: 30px;
+        padding-left: 0px;
+    }
+}
 </style>
