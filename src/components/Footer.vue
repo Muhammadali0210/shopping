@@ -1,63 +1,65 @@
 <template>
-    <div class="footer-wrap">
-        <div class="footer-row">
-            <Logo />
-            <div class="networ-wrap mt">
-                <div class="text-fz14-lh24-fw500-p text-black">Address</div>
-                <div class="text-fz14-lh24-fw500-p text-grey">2118 Thornridge Cir. Syracuse, Connecticut 35624</div>
-            </div>
-            <div class="networ-wrap">
-                <div class="text-fz14-lh24-fw500-p text-black">Email</div>
-                <div class="text-fz14-lh24-fw500-p text-grey">Shoppes@example.com</div>
-            </div>
-            <div class="networ-wrap">
-                <div class="text-fz14-lh24-fw500-p text-black">Phone Number</div>
-                <div class="text-fz14-lh24-fw500-p text-grey">+321 4356 2212</div>
-            </div>
-        </div>
-        <div class="footer-row foter-menu">
-            <div class="footer-nav">
-                <div class="text-fz14-lh24-fw500-p text-black">Menu</div>
-                <div class="text-fz14-lh24-fw500-p text-grey cursor">Home</div>
-                <div class="text-fz14-lh24-fw500-p text-grey cursor">Shop</div>
-                <div class="text-fz14-lh24-fw500-p text-grey cursor">Wishlist</div>
-                <div class="text-fz14-lh24-fw500-p text-grey cursor">Order Tracking</div>
-                <div class="text-fz14-lh24-fw500-p text-grey cursor">Blogs </div>
-            </div>
-            <div class="footer-nav">
-                <div class="text-fz14-lh24-fw500-p text-black">Quick Links</div>
-                <div class="text-fz14-lh24-fw500-p text-grey cursor">login</div>
-                <div class="text-fz14-lh24-fw500-p text-grey cursor">Register</div>
-                <div class="text-fz14-lh24-fw500-p text-grey cursor">My Cart</div>
-            </div>
-        </div>
-        <div class="footer-row">
-            <div class="text-fz14-lh24-fw500-p text-black">Let’s Stay in Touch</div>
-            <div class="footer-email">
-                <input type="text" class="footer-input" placeholder="Enter Your Email Address">
-                <div class="footer-email_button">
-                    <PrimaryButton class="f_e_m">Subscribe</PrimaryButton>
+    <div class="container">
+        <div class="footer-wrap">
+            <div class="footer-row">
+                <Logo />
+                <div class="networ-wrap mt">
+                    <div class="text-fz14-lh24-fw500-p text-black">Address</div>
+                    <div class="text-fz14-lh24-fw500-p text-grey">2118 Thornridge Cir. Syracuse, Connecticut 35624</div>
+                </div>
+                <div class="networ-wrap">
+                    <div class="text-fz14-lh24-fw500-p text-black">Email</div>
+                    <div class="text-fz14-lh24-fw500-p text-grey">Shoppes@example.com</div>
+                </div>
+                <div class="networ-wrap">
+                    <div class="text-fz14-lh24-fw500-p text-black">Phone Number</div>
+                    <div class="text-fz14-lh24-fw500-p text-grey">+321 4356 2212</div>
                 </div>
             </div>
-
-            <div class="foter-network-icon-wrap">
-                <div class="text-fz14-lh24-fw500-p text-black">Follow our Social</div>
-                <div class="network-icon-wrap">
-                    <div class="foter-network-icon cursor">
-                        <img src="../icons/Icon - Facebook.svg" alt="facebook">
+            <div class="footer-row foter-menu">
+                <div class="footer-nav">
+                    <div class="text-fz14-lh24-fw500-p text-black">Menu</div>
+                    <div class="text-fz14-lh24-fw500-p text-grey cursor">Home</div>
+                    <div class="text-fz14-lh24-fw500-p text-grey cursor">Shop</div>
+                    <div class="text-fz14-lh24-fw500-p text-grey cursor">Wishlist</div>
+                    <div class="text-fz14-lh24-fw500-p text-grey cursor">Order Tracking</div>
+                    <div class="text-fz14-lh24-fw500-p text-grey cursor">Blogs </div>
+                </div>
+                <div class="footer-nav">
+                    <div class="text-fz14-lh24-fw500-p text-black">Quick Links</div>
+                    <div class="text-fz14-lh24-fw500-p text-grey cursor">login</div>
+                    <div class="text-fz14-lh24-fw500-p text-grey cursor">Register</div>
+                    <div class="text-fz14-lh24-fw500-p text-grey cursor">My Cart</div>
+                </div>
+            </div>
+            <div class="footer-row">
+                <div class="text-fz14-lh24-fw500-p text-black">Let’s Stay in Touch</div>
+                <div class="footer-email">
+                    <input type="text" class="footer-input" placeholder="Enter Your Email Address">
+                    <div class="footer-email_button">
+                        <PrimaryButton class="f_e_m">Subscribe</PrimaryButton>
                     </div>
-                    <div class="foter-network-icon cursor">
-                        <img src="../icons/Icon - insta.svg" alt="facebook">
-                    </div>
-                    <div class="foter-network-icon cursor">
-                        <img src="../icons/Icon - Watsap.svg" alt="facebook">
+                </div>
+    
+                <div class="foter-network-icon-wrap">
+                    <div class="text-fz14-lh24-fw500-p text-black">Follow our Social</div>
+                    <div class="network-icon-wrap">
+                        <div class="foter-network-icon cursor">
+                            <img src="../icons/Icon - Facebook.svg" alt="facebook">
+                        </div>
+                        <div class="foter-network-icon cursor">
+                            <img src="../icons/Icon - insta.svg" alt="facebook">
+                        </div>
+                        <div class="foter-network-icon cursor">
+                            <img src="../icons/Icon - Watsap.svg" alt="facebook">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="copyright text-fz14-lh24-fw500-p text-grey">
-        Copyright Shoppes 2023 All Right Reserved
+        <div class="copyright text-fz14-lh24-fw500-p text-grey">
+            Copyright Shoppes 2023 All Right Reserved
+        </div>
     </div>
 </template>
 <script>
@@ -152,6 +154,11 @@ export default {
     .footer-wrap{
         gap: 30px;
         padding-left: 0px;
+    }
+}
+@media (max-width: 500px) {
+    .footer-email .footer-input{
+        width: 300px;
     }
 }
 </style>

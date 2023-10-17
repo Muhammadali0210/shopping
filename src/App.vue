@@ -1,17 +1,15 @@
 <template>
-  <div class="container">
-    <Navbar />
-    <RouterLink to="/">Home</RouterLink>
-    <RouterLink to="/about">About</RouterLink>
-    <RouterView />
-    <Footer />
-  </div>
+  <Navbar />
+  <!-- <RouterLink to="/">Home</RouterLink> -->
+  <!-- <RouterLink to="/about">About</RouterLink> -->
+  <RouterView />
+  <Footer />
 </template>
 
 <script>
 import { RouterLink, RouterView } from 'vue-router'
 import Navbar from './components/Navbar.vue'
-import Footer from './components/Footer.vue';
+import Footer from './components/Footer.vue'
 export default{
   components:{
     Navbar,

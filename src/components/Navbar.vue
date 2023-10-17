@@ -1,102 +1,103 @@
 <template>
-    <div class="navbar-box" id="navbar">
-        <div class="navbar">
-            <Logo class="cursor"/>
-            <ul class="nav_ul">
-                <li>
-                    <div class="text-fz14-lh24-fw500-p page-link">Home</div>
-                </li>
-                <li>
-                    <div class="text-fz14-lh24-fw500-p page-link">Shop</div>
-                </li>
-                <li>
-                    <div class="text-fz14-lh24-fw500-p page-link">Wishlist</div>
-                </li>
-                <li>
-                    <div class="text-fz14-lh24-fw500-p page-link">Order Traking</div>
-                </li>
-                <li>
-                    <div class="text-fz14-lh24-fw500-p page-link">Blogs </div>
-                </li>
-            </ul>
-            <div class="nav_end">
-                <div class="search cursor">
-                    <div class="search_icon">
-                        <img src="../icons/search.svg" alt="search">
-                    </div>
-                    <span class="text-fz14-lh24-fw500-p">Search</span>
-                </div>
-                <div class="nav_line"></div>
-                <div class="login-line-link cursor text-fz14-lh24-fw500-p" @click="active = !active">
-                    Log in
-                </div>
-                <div class="bag_icon cursor">
-                    <img src="../icons/bag.svg" alt="bag">
-                </div>
-            </div>
-            <div class="hamburger-icon cursor" @click="hamburgerNav">
-                <img v-if="!ham_active" src="../icons/hamburger.svg" alt="ham">
-                <img v-else src="../icons/close.svg" alt="ham">
-            </div>
-        </div>
-    </div>
-
-    <div class="nav_opacity" :class="[{active: active}]">
-        <div class="opacity_content">
-            <div class="close_icon cursor" @click="active = !active">
-                <img src="../icons/close.svg" alt="close">
-            </div>
-            <div class="login-page" v-if="login">
-                <div class="title text-fz40-lh50-fw400-a" style="text-align: center; margin: 8px 0 24px;">Login</div>
-                <form action="#">
-                    <Input label="Username" placeholder="Username or Email Adress" type="email"/>
-                    <InputPassword label="Password" placeholder="Password"/>
-                    <div class="foget-password">
-                        <div style="display: flex;">
-                            <FormCheck />
-                            <div class="text-fz12-lh24-fw500-p text-grey" style="margin-left: 8px;">Remember me</div>
+    <div class="container">
+        <div class="navbar-box" id="navbar">
+            <div class="navbar">
+                <Logo class="cursor"/>
+                <ul class="nav_ul">
+                    <li>
+                        <div class="text-fz14-lh24-fw500-p page-link">Home</div>
+                    </li>
+                    <li>
+                        <div class="text-fz14-lh24-fw500-p page-link">Shop</div>
+                    </li>
+                    <li>
+                        <div class="text-fz14-lh24-fw500-p page-link">Wishlist</div>
+                    </li>
+                    <li>
+                        <div class="text-fz14-lh24-fw500-p page-link">Order Traking</div>
+                    </li>
+                    <li>
+                        <div class="text-fz14-lh24-fw500-p page-link">Blogs </div>
+                    </li>
+                </ul>
+                <div class="nav_end">
+                    <div class="search cursor">
+                        <div class="search_icon">
+                            <img src="../icons/search.svg" alt="search">
                         </div>
-                        <div class="form-likn cursor">Forgot Password</div>
+                        <span class="text-fz14-lh24-fw500-p text-white">Search</span>
                     </div>
-                    <PrimaryButton>Login</PrimaryButton>
-                    <div class="form_end_link">
-                        <div class="text-fz12-lh24-fw500-p text-grey">Not a mamber?</div>
-                        <div class="form-likn cursor">Register</div>
+                    <div class="nav_line"></div>
+                    <div class="login-line-link cursor text-fz14-lh24-fw500-p text-white" @click="active = !active">
+                        Log in
                     </div>
-                </form>
+                    <div class="bag_icon cursor">
+                        <img src="../icons/bag.svg" alt="bag">
+                    </div>
+                </div>
+                <div class="hamburger-icon cursor" @click="hamburgerNav">
+                    <img v-if="!ham_active" src="../icons/hamburger.svg" alt="ham">
+                    <img v-else src="../icons/close.svg" alt="ham">
+                </div>
             </div>
         </div>
-    </div>
-
     
-    <div class="nav_hamburger-page" :class="[{ham_active: ham_active}]">
-        <div class="ham_show">
-            <div class="ham_search">
-                <input type="text" class="ham_search_input" placeholder="Search">
-                <img src="../icons/Search.svg" alt="search" class="search_icon">
+        <div class="nav_opacity" :class="[{active: active}]">
+            <div class="opacity_content">
+                <div class="close_icon cursor" @click="active = !active">
+                    <img src="../icons/close.svg" alt="close">
+                </div>
+                <div class="login-page" v-if="login">
+                    <div class="title text-fz40-lh50-fw400-a" style="text-align: center; margin: 8px 0 24px;">Login</div>
+                    <form action="#">
+                        <Input label="Username" placeholder="Username or Email Adress" type="email"/>
+                        <InputPassword label="Password" placeholder="Password"/>
+                        <div class="foget-password">
+                            <div style="display: flex;">
+                                <FormCheck />
+                                <div class="text-fz12-lh24-fw500-p text-grey" style="margin-left: 8px;">Remember me</div>
+                            </div>
+                            <div class="form-likn cursor">Forgot Password</div>
+                        </div>
+                        <PrimaryButton>Login</PrimaryButton>
+                        <div class="form_end_link">
+                            <div class="text-fz12-lh24-fw500-p text-grey">Not a mamber?</div>
+                            <div class="form-likn cursor">Register</div>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <ul class="nav_hamburger_ul">
-                <li>
-                    <div class="text-fz14-lh24-fw500-p ham_page-link">Home</div>
-                </li>
-                <li>
-                    <div class="text-fz14-lh24-fw500-p ham_page-link">Shop</div>
-                </li>
-                <li>
-                    <div class="text-fz14-lh24-fw500-p ham_page-link">Wishlist</div>
-                </li>
-                <li>
-                    <div class="text-fz14-lh24-fw500-p ham_page-link">Order Traking</div>
-                </li>
-                <li>
-                    <div class="text-fz14-lh24-fw500-p ham_page-link">Blogs </div>
-                </li>
-                <li>
-                    <div class="text-fz14-lh24-fw500-p ham_page-link">My cart </div>
-                </li>
-            </ul> 
-            <div class="ham_button" @click="active= !active">
-                <PrimaryButton>Login</PrimaryButton>
+        </div>
+    
+        <div class="nav_hamburger-page" :class="[{ham_active: ham_active}]">
+            <div class="ham_show">
+                <div class="ham_search">
+                    <input type="text" class="ham_search_input" placeholder="Search">
+                    <img src="../icons/Search.svg" alt="search" class="search_icon">
+                </div>
+                <ul class="nav_hamburger_ul">
+                    <li>
+                        <div class="text-fz14-lh24-fw500-p ham_page-link">Home</div>
+                    </li>
+                    <li>
+                        <div class="text-fz14-lh24-fw500-p ham_page-link">Shop</div>
+                    </li>
+                    <li>
+                        <div class="text-fz14-lh24-fw500-p ham_page-link">Wishlist</div>
+                    </li>
+                    <li>
+                        <div class="text-fz14-lh24-fw500-p ham_page-link">Order Traking</div>
+                    </li>
+                    <li>
+                        <div class="text-fz14-lh24-fw500-p ham_page-link">Blogs </div>
+                    </li>
+                    <li>
+                        <div class="text-fz14-lh24-fw500-p ham_page-link">My cart </div>
+                    </li>
+                </ul> 
+                <div class="ham_button" @click="active= !active">
+                    <PrimaryButton>Login</PrimaryButton>
+                </div>
             </div>
         </div>
     </div>
@@ -119,6 +120,8 @@ export default {
             this.ham_active = !this.ham_active;
             if(this.ham_active){
                 document.getElementById("app").style.position = 'fixed';
+            } else {
+                document.getElementById("app").style.position = 'relative';
             }
         }
     },
