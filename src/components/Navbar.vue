@@ -249,7 +249,7 @@ export default {
     z-index: 101;
     position: absolute;
     top: 0;
-    padding-top: 83px;
+    padding-top: 84px;
     left: 0;
     right: 0;
     height: 0px;
@@ -257,7 +257,7 @@ export default {
     box-shadow: 0px 26px 38px 0px rgba(5, 4, 16, 0.13);
 }
 .nav_hamburger-page .ham_show{
-    background-color: #fff;
+    background-color: #ffffff;
     height: 554px;
     transform: translateY(-554px);
     transition: all 1s;

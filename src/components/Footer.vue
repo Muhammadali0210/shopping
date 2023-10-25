@@ -158,7 +158,7 @@ export default {
 }
 @media (max-width: 500px) {
     .footer-email .footer-input{
-        width: 300px;
+        width: 100%;
     }
 }
 </style>
