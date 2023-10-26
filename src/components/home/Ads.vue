@@ -7,7 +7,7 @@
 
             <div class="my-swiper-content">
               <div class="container">
-                <swiper
+                <swiper 
                   class="my-swiper"
                   :slides-per-view="6"
                   :space-between="0"
@@ -71,6 +71,18 @@
           {
             img_url: "../src/images/ads6.jpg",
           },
+          {
+            img_url: "../src/images/ads7.jpg",
+          },          
+          {
+            img_url: "../src/images/ads8.jpg",
+          }, 
+          {
+            img_url: "../src/images/ads9.jpg",
+          },
+          {
+            img_url: "../src/images/ads10.jpg",
+          },
         ],
       }
     },
@@ -92,7 +104,7 @@
 }
 .container{
   overflow: hidden;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   height: 170px;
 }
 .swiper-slide{

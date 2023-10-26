@@ -8,6 +8,7 @@
     <AdvertsingCompanies />
     <TrendingNow />
     <Ads />
+    <LatesBlogs />
   </div>
   
 </template>
@@ -20,6 +21,7 @@ import WhyChooseUs from '../components/home/WhyChooseUs.vue';
 import AdvertsingCompanies from '../components/home/AdvertisingCompanies.vue'
 import TrendingNow from '../components/home/TrendingNow.vue';
 import Ads from '../components/home/Ads.vue';
+import LatesBlogs from '../components/home/LatesBlogs.vue'
 export default{
   components:{
     Header,
@@ -28,7 +30,8 @@ export default{
     FavouriteProduct,
     AdvertsingCompanies,
     TrendingNow,
-    Ads
+    Ads,
+    LatesBlogs
 }
 }
 
