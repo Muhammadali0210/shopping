@@ -37,18 +37,16 @@ export default {
     align-items: center;
 }
 .advertising-content .advertising-item{
-    /* padding: 67px 52px; */
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 200px;
 }
 .advertising-igm{
-    object-fit: cover;
+    object-fit: contain;
     width: 140px;
     height: 50px;
-    border: 1px solid red;
 }
 @media (max-width: 1200px) {
     .advertising-wrap .advertising-content{
