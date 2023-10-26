@@ -1,4 +1,3 @@
-
 <template>
   <div class="home-page">
     <Header />
@@ -15,9 +14,9 @@
 </template>
 
 <script >
+import Header from '../components/home/Header.vue';
 import CustomersOpinion from '../components/home/CustomersOpinion.vue';
 import FavouriteProduct from '../components/home/FavouriteProduct.vue';
-import Header from '../components/home/Header.vue';
 import WhyChooseUs from '../components/home/WhyChooseUs.vue';
 import AdvertsingCompanies from '../components/home/AdvertisingCompanies.vue'
 import TrendingNow from '../components/home/TrendingNow.vue';

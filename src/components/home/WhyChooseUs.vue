@@ -42,11 +42,7 @@
         </div>
     </div>
 </template>
-<script>
-export default {
-    
-}
-</script>
+
 <style scoped>
 .about-us{
     display: flex;
@@ -70,11 +66,7 @@ export default {
     justify-content: center;
     align-items: center;
 }
-.inf_image img{
-    width: 76%;
-    height: 76%;
-    object-fit: contain;
-}
+
 .discription{
     margin-top: 8px;
     text-align: center;

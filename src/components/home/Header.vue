@@ -10,13 +10,7 @@
     </div>
 </template>
 
-<script>
-export default {
-    
-}
-</script>
-
-<style>
+<style scoped>
 .home_header{
     width: 100%;
     min-height: 100vh;
