@@ -1,8 +1,8 @@
-<svg width="116" height="66" viewBox="0 0 116 66" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="100" height="50" viewBox="0 0 116 66" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <rect width="116" height="66" fill="#E4E9EB"/>
 <g clip-path="url(#clip0_6_16)">
 <rect width="1440" height="5139" transform="translate(-202 -2297)" fill="white"/>
-<rect x="-202" y="-67" width="1440" height="200" fill="#F6F6F6"/>
+<rect x="-102" y="-67" width="1440" height="200" fill="#F6F6F6"/>
 <rect width="115.837" height="66" fill="url(#pattern0)"/>
 </g>
 <defs>
