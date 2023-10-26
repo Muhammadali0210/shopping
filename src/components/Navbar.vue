@@ -5,16 +5,22 @@
                 <Logo class="cursor"/>
                 <ul class="nav_ul">
                     <li>
-                        <div class="text-fz14-lh24-fw500-p page-link">Home</div>
+                        <RouterLink to="/">
+                            <div class="text-fz14-lh24-fw500-p page-link">Home</div>
+                        </RouterLink>
                     </li>
                     <li>
-                        <div class="text-fz14-lh24-fw500-p page-link">Shop</div>
+                        <RouterLink to="/shop">
+                            <div class="text-fz14-lh24-fw500-p page-link">Shop</div>
+                        </RouterLink>
                     </li>
                     <li>
                         <div class="text-fz14-lh24-fw500-p page-link">Wishlist</div>
                     </li>
                     <li>
-                        <div class="text-fz14-lh24-fw500-p page-link">Order Traking</div>
+                        <RouterLink to="/orderTraching">
+                            <div class="text-fz14-lh24-fw500-p page-link">Order Traking</div>
+                        </RouterLink>
                     </li>
                     <li>
                         <div class="text-fz14-lh24-fw500-p page-link">Blogs </div>

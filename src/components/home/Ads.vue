@@ -12,6 +12,9 @@
                   :slides-per-view="6"
                   :space-between="0"
                   :loop="true"
+                  :auto-play="true"
+                  :delay="500"
+
                   @swiper="onSwiper"
                   @slideChange="onSlideChange"
                 >
@@ -33,6 +36,13 @@
   // Import Swiper styles
   import 'swiper/css';
 
+  // var swiper = new Swiper(".my-swiper", {
+  //   centeredSlides: true,
+  //   autoplay: {
+  //     delay: 500,
+  //     disableOnInteraction: false
+  //   },
+  // });
   export default {
     components: {
       Swiper,
