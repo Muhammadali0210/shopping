@@ -33,6 +33,10 @@ img{
   height: 100%;
 }
 
+button{
+  border: none;
+}
+
 .cursor{
   cursor: pointer;
   transition: all .25s;

@@ -65,10 +65,15 @@ export default {
     width: 58px;
     height: 58px;
     border-radius: 50%;
-    background-image: linear-gradient(135deg, var(--secondary));;
+    background-image: linear-gradient(135deg, var(--secondary));
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.inf_image img{
+    width: 76%;
+    height: 76%;
+    object-fit: contain;
 }
 .discription{
     margin-top: 8px;
@@ -88,6 +93,7 @@ export default {
 @media (max-width: 992px) {
     .text-content .title{
         font-size: 16px;
+        text-align: center;
     }
 }
 </style>

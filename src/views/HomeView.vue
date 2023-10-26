@@ -9,6 +9,7 @@
     <TrendingNow />
     <Ads />
     <LatesBlogs />
+    <Subscribe />
   </div>
   
 </template>
@@ -21,7 +22,8 @@ import WhyChooseUs from '../components/home/WhyChooseUs.vue';
 import AdvertsingCompanies from '../components/home/AdvertisingCompanies.vue'
 import TrendingNow from '../components/home/TrendingNow.vue';
 import Ads from '../components/home/Ads.vue';
-import LatesBlogs from '../components/home/LatesBlogs.vue'
+import LatesBlogs from '../components/home/LatesBlogs.vue';
+import Subscribe from '../components/home/Subscribe.vue';
 export default{
   components:{
     Header,
@@ -31,7 +33,8 @@ export default{
     AdvertsingCompanies,
     TrendingNow,
     Ads,
-    LatesBlogs
+    LatesBlogs,
+    Subscribe
 }
 }
 

@@ -10,7 +10,7 @@
     line-height: 62px;
     font-weight: 400;
     font-family: AntonRegular;
-    color: var(--black);
+    /* color: var(--black); */
 }
 .text-fz50-lh125-fw400-a{
     font-size: 50px;
