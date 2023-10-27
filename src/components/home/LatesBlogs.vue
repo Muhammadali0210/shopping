@@ -64,6 +64,7 @@
     transform: translateY(-40px);
 }
 .lates-blog-content{
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
@@ -71,6 +72,7 @@
 .lates-item{
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 .lb-image{
     width: 100%;
@@ -78,6 +80,8 @@
 }
 .lb-image img{
     object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 .lb-title{
     margin-top: 24px;
@@ -96,6 +100,7 @@
     height: 40px;
     border-radius: 50%;
 }
+
 @media (max-width: 992px){
     .lates-blog-content{
         display: grid;
@@ -106,7 +111,7 @@
         height: 300px;
     }
 }
-@media (max-width: 992px){
+@media (max-width: 500px){
     .lb-image{
         height: 200px;
     }
