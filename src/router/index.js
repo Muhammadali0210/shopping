@@ -16,6 +16,11 @@ const router = createRouter({
       component: Shop
     },
     {
+      path: '/wishlist',
+      name: 'wishlist',
+      component: () => import('../views/WishlistView.vue')
+    },
+    {
       path: '/orderTraching',
       name: 'orderTraching',
       component: () => import('../views/OrderTrackingView.vue')

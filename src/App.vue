@@ -1,15 +1,13 @@
 <template>
   <Navbar />
-  <!-- <RouterLink to="/">Home</RouterLink> -->
-  <!-- <RouterLink to="/about">About</RouterLink> -->
   <RouterView />
   <Footer />
 </template>
 
 <script>
 import { RouterLink, RouterView } from 'vue-router'
-import Navbar from './components/Navbar.vue'
-import Footer from './components/Footer.vue'
+import Navbar from './components/constant-component/Navbar.vue'
+import Footer from './components/constant-component/Footer.vue'
 export default{
   components:{
     Navbar,

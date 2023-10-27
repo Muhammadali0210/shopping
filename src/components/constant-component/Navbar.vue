@@ -15,7 +15,9 @@
                         </RouterLink>
                     </li>
                     <li>
-                        <div class="text-fz14-lh24-fw500-p page-link">Wishlist</div>
+                        <RouterLink to="/wishlist">
+                            <div class="text-fz14-lh24-fw500-p page-link">Wishlist</div>
+                        </RouterLink>
                     </li>
                     <li>
                         <RouterLink to="/orderTraching">
@@ -29,7 +31,7 @@
                 <div class="nav_end">
                     <div class="search cursor">
                         <div class="search_icon">
-                            <img src="../icons/search.svg" alt="search">
+                            <img src="../../icons/search.svg" alt="search">
                         </div>
                         <span class="text-fz14-lh24-fw500-p text-black">Search</span>
                     </div>
@@ -38,7 +40,7 @@
                         Log in
                     </div>
                     <div class="bag_icon cursor">
-                        <img src="../icons/bag.svg" alt="bag">
+                        <img src="../../icons/bag.svg" alt="bag">
                     </div>
                 </div>
                 <div class="hamburger-icon cursor" @click="hamburgerNav">
