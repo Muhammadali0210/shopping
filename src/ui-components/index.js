@@ -9,5 +9,18 @@ import Toggle from './Toggle.vue'
 import Check from './Check.vue'
 import FormCheck from './FormCheck.vue'
 import InputPasswoed from './InputPassword.vue'
+import DataNotFound from './DataNotFound.vue'
 
-export default[Input, Logo, Textarea, PrimaryButton, SecondaryButton, TertiaryButton, StateButton, Toggle, Check, InputPasswoed, FormCheck]
+export default[Input,
+    Logo,
+    Textarea,
+    PrimaryButton,
+    SecondaryButton,
+    TertiaryButton,
+    StateButton,
+    Toggle,
+    Check,
+    InputPasswoed,
+    FormCheck,
+    DataNotFound
+]

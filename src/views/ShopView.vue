@@ -1,14 +1,11 @@
 <template>
+    <div class="space"></div>
     <Shop />
 </template>
 <script>
 import Shop from '../components/shop/Shop.vue';
+
 export default {
-    comments: {
-        Shop,
-    },
+    components: { Shop }
 }
 </script>
-<style>
-    
-</style>

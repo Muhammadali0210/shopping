@@ -48,6 +48,12 @@
     font-family: PlusJakartaSans;
     color: var(--black);   
 }
+.text-fz18-lh22-fw600-p{
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 600;
+    font-family: PlusJakartaSans;
+}
 .text-fz16-lh20-fw700-p{
     font-size: 16px;
     line-height: 20px;

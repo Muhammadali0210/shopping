@@ -1,22 +1,88 @@
 <template>
-    <div>
-        <br><br><br><br><br>
-        <h1>Order Tracing</h1>
-        
-        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo hic quibusdam facere, pariatur neque tenetur eaque consectetur similique perferendis facilis eius harum accusamus, ea eligendi? Dolore iure vel error voluptatum?
-        Neque, dolor optio et maxime ullam dolorem tempora unde eaque harum sequi mollitia omnis dolore explicabo adipisci incidunt nulla. Numquam dicta eveniet, sunt itaque voluptas quisquam alias ea? Hic, dolorum.
-        Cum, maiores quis architecto fugit maxime nobis ab at laboriosam repellat eveniet voluptatibus, laudantium, ipsum totam porro. Eos, laboriosam vel eum perferendis velit sint voluptatem id sit ipsum aliquam repellat.
-        Quod sed doloremque ea dignissimos quia consectetur repudiandae maiores nam porro itaque, incidunt debitis, illum necessitatibus recusandae natus quae at, magni distinctio? Velit autem dolor soluta quaerat dolorum nostrum fugit.
-        Laborum exercitationem reprehenderit unde eos quasi nobis, libero, mollitia itaque voluptatem, explicabo modi quam dolor eius? Harum ducimus nisi qui, esse eum molestias laboriosam accusamus! Atque culpa magni ducimus deleniti?
-        <br><br>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci modi autem, corrupti sequi necessitatibus culpa. Debitis maxime, quasi cum est minima repudiandae rem blanditiis a, eveniet doloremque unde autem laborum. Doloribus vel nihil accusantium rerum porro atque dicta ad numquam deleniti quia, sapiente, ullam consectetur quaerat nulla reprehenderit blanditiis eius illo ab fugiat facere distinctio officiis ipsam. Harum corrupti autem nostrum unde. Eos quis libero temporibus ducimus quod optio quo, ullam perspiciatis, ipsa ex, eius itaque aperiam molestias quia officia repellat? In quam error, soluta, animi numquam alias omnis adipisci commodi rem labore natus? Non veritatis fugit nesciunt! Rem, dolorum!</h2>
+    <div class="container">
+        <div class="order-wrapper">
+            <div class="order-content" v-if="order">
+                <div class="main-title">Order Tracking</div>
+                <div class="main-description">
+                    To track your order please enter your Order ID in the box below and press the "Track" button. This was given to you on your receipt and in the confirmation email you should have received.
+                </div>
+                <form action="#">
+                    <Input label="Order Tracking" type="email"/>
+                    <Input label="Billing Email" type="text"/>
+                    <PrimaryButton>Track</PrimaryButton>
+                </form>
+
+            </div>
+            <DataNotFound v-else dataImg="../src/icons/oreder-not-found.svg" dataText="No Data Found"/>
+        </div>
     </div>
 </template>
 <script>
 export default {
-    
+    data() {
+        return {
+            order: false,
+        }
+    },
 }
 </script>
-<style>
-    
+<style scoped>
+.order-wrapper{
+    width: 100%;
+    height: 514px;
+    /* padding-bottom: 80px; */
+    /* padding-top: 52px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.order-content{
+    width: 440px;
+    /* margin: 300px   ; */
+    height: auto;
+    /* border: 1px solid red; */
+}
+.order-content .main-title{
+    padding: 0;
+}
+.order-content .main-description{
+    padding: 24px 0 32px;
+}
+@media (max-width: 992px) {
+    .order-content .main-description{
+        padding: 24px 0;
+    }
+    .order-wrapper{
+        height: 414px;
+        padding-top: 50px;
+    }
+}
+@media (max-width: 500px){
+    .order-content{
+        width: 100%;
+    }
+}
+
+/* order not found */
+
+.oreder-not-found_img{
+    width: 255px;
+    height: 255px;
+    border-radius: 50%;
+    border: 1px solid var(--grey-c4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--grey-f6);
+}
+.oreder-not-found_img img{
+    background-position: center center;
+    /* width: 100%; */
+    /* height: 100%; */
+}
+.oreder-not-found_text{
+    text-align: center;
+    margin-top: 16px;
+}
+
 </style>

@@ -31,10 +31,10 @@
                         <div class="search_icon">
                             <img src="../icons/search.svg" alt="search">
                         </div>
-                        <span class="text-fz14-lh24-fw500-p text-white">Search</span>
+                        <span class="text-fz14-lh24-fw500-p text-black">Search</span>
                     </div>
                     <div class="nav_line"></div>
-                    <div class="login-line-link cursor text-fz14-lh24-fw500-p text-white" @click="active = !active">
+                    <div class="login-line-link cursor text-fz14-lh24-fw500-p text-black" @click="active = !active">
                         Log in
                     </div>
                     <div class="bag_icon cursor">

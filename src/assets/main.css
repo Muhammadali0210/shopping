@@ -58,6 +58,22 @@ button{
 
 }
 
+.main-description{
+  color: var(--grey-87);
+  text-align: center;
+  font-family: PlusJakartaSans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.space{
+  width: 100%;
+  /* background-color: #9a3333; */
+  height: 108px;
+}
+
 @media (max-width: 1920px) {
   .container{
     width: 1300px;
@@ -86,6 +102,10 @@ button{
     font-size: 32px;
     line-height: 40px;
     padding: 64px 0 48px;
+  }
+  .main-description{
+    font-size: 12px;
+    line-height: 24px;
   }
 }
 
