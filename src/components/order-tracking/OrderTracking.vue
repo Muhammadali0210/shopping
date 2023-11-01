@@ -1,5 +1,6 @@
 <template>
     <div class="container">
+        <RouterLinkBar />
         <div class="order-wrapper">
             <div class="order-content" v-if="order">
                 <div class="main-title">Order Tracking</div>
@@ -21,7 +22,7 @@
 export default {
     data() {
         return {
-            order: false,
+            order: true,
         }
     },
 }

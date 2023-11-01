@@ -74,12 +74,25 @@
     font-weight: 500;
     font-family: PlusJakartaSans;
 }
+.text-fz14-lh24-fw600-p{
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+    font-family: PlusJakartaSans;
+}
+.text-fz14-lh24-fw400-p{
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: PlusJakartaSans;
+}
 .text-fz12-lh24-fw500-p{
     font-size: 12px;
     line-height: 24px;
     font-weight: 500;
     font-family: PlusJakartaSans;
 }
+
 .form-likn{
     color: var(#100D22);
     font-family: PlusJakartaSans;

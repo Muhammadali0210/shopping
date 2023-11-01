@@ -44,8 +44,8 @@
                     </div>
                 </div>
                 <div class="hamburger-icon cursor" @click="hamburgerNav">
-                    <img v-if="!ham_active" src="../icons/hamburger.svg" alt="ham">
-                    <img v-else src="../icons/close.svg" alt="ham">
+                    <img v-if="!ham_active" src="../../icons/hamburger.svg" alt="ham">
+                    <img v-else src="../../icons/close.svg" alt="ham">
                 </div>
             </div>
         </div>
@@ -53,7 +53,7 @@
         <div class="nav_opacity" :class="[{active: active}]">
             <div class="opacity_content">
                 <div class="close_icon cursor" @click="active = !active">
-                    <img src="../icons/close.svg" alt="close">
+                    <img src="../../icons/close.svg" alt="close">
                 </div>
                 <div class="login-page" v-if="login">
                     <div class="title text-fz40-lh50-fw400-a" style="text-align: center; margin: 8px 0 24px;">Login</div>
@@ -81,7 +81,7 @@
             <div class="ham_show">
                 <div class="ham_search">
                     <input type="text" class="ham_search_input" placeholder="Search">
-                    <img src="../icons/Search.svg" alt="search" class="search_icon">
+                    <img src="../../icons/Search.svg" alt="search" class="search_icon">
                 </div>
                 <ul class="nav_hamburger_ul">
                     <li>

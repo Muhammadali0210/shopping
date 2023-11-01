@@ -10,6 +10,8 @@ import Check from './Check.vue'
 import FormCheck from './FormCheck.vue'
 import InputPasswoed from './InputPassword.vue'
 import DataNotFound from './DataNotFound.vue'
+import RouterLinkBar from './RouterLinkBar.vue'
+import ProductItem from './ProductItem.vue'
 
 export default[Input,
     Logo,
@@ -22,5 +24,7 @@ export default[Input,
     Check,
     InputPasswoed,
     FormCheck,
-    DataNotFound
+    DataNotFound,
+    RouterLinkBar,
+    ProductItem
 ]
