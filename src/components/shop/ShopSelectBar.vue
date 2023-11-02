@@ -7,7 +7,7 @@
         <div class="sort-by">
             <div class="text-fz12-lh24-fw500-p">Sort By</div>
             <img src="../../icons/bottom-shit.svg" alt=">" class="sort-by-icon">
-
+            
         </div> 
     </div>
 </template>

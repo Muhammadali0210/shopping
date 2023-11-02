@@ -45,13 +45,13 @@
                     <div class="text-fz14-lh24-fw500-p text-black">Follow our Social</div>
                     <div class="network-icon-wrap">
                         <div class="foter-network-icon cursor">
-                            <img src="../icons/Icon - Facebook.svg" alt="facebook">
+                            <img src="../../icons/Icon - Facebook.svg" alt="facebook">
                         </div>
                         <div class="foter-network-icon cursor">
-                            <img src="../icons/Icon - insta.svg" alt="facebook">
+                            <img src="../../icons/Icon - insta.svg" alt="facebook">
                         </div>
                         <div class="foter-network-icon cursor">
-                            <img src="../icons/Icon - Watsap.svg" alt="facebook">
+                            <img src="../../icons/Icon - Watsap.svg" alt="facebook">
                         </div>
                     </div>
                 </div>

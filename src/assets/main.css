@@ -36,7 +36,11 @@ li{
 button{
   border: none;
 }
-
+.line{
+  width: 100%;
+  height: 1px;
+  background-color: var(--grey-e8);
+}
 .cursor{
   cursor: pointer;
   transition: all .25s;

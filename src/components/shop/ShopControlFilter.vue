@@ -45,7 +45,7 @@ export default {
 .price-content{
     height: 110px;
     width: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     border-bottom: 1px solid #E8E8E8;
 }
 .price-input-content{

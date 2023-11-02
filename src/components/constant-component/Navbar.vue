@@ -25,7 +25,9 @@
                         </RouterLink>
                     </li>
                     <li>
-                        <div class="text-fz14-lh24-fw500-p page-link">Blogs </div>
+                        <RouterLink to="/seeDetails">
+                            <div class="text-fz14-lh24-fw500-p page-link">See Detail</div>
+                        </RouterLink>
                     </li>
                 </ul>
                 <div class="nav_end">

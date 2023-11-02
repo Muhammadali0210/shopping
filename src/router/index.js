@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import Shop from '../views/ShopView.vue'
+import SeeDetails from '../views/SeeDetailsView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -24,7 +25,13 @@ const router = createRouter({
       path: '/orderTraching',
       name: 'orderTraching',
       component: () => import('../views/OrderTrackingView.vue')
-    }
+    },
+    {
+      path: '/seeDetails',
+      name: 'seeDetails',
+      component: SeeDetails
+    },
+
   ]
 })
 

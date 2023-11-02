@@ -41,6 +41,13 @@
     color: var(--black);
     letter-spacing: -3% ;
 }
+.text-fz32-lh40-fw800-p{
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 800;
+    font-family: PlusJakartaSans;
+    letter-spacing: -3% ;
+}
 .text-fz18-lh22-fw700-p{
     font-size: 18px;
     line-height: 22px;
@@ -59,14 +66,12 @@
     line-height: 20px;
     font-weight: 700;
     font-family: PlusJakartaSans;
-    color: var(--black);   
 }
 .text-fz16-lh20-fw600-p{
     font-size: 16px;
     line-height: 20px;
     font-weight: 500;
     font-family: PlusJakartaSans;
-    /* color: var(--black);    */
 }
 .text-fz14-lh24-fw500-p{
     font-size: 14px;
