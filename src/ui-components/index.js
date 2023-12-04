@@ -12,8 +12,13 @@ import InputPasswoed from './InputPassword.vue'
 import DataNotFound from './DataNotFound.vue'
 import RouterLinkBar from './RouterLinkBar.vue'
 import ProductItem from './ProductItem.vue'
+import StarEvaluation from './StarEvaluation.vue'
+import StarResult from './StarResult.vue'
+import AddButton from './AddButton.vue'
+import RemoveButton from './RemoveButton.vue'
 
-export default[Input,
+export default[
+    Input,
     Logo,
     Textarea,
     PrimaryButton,
@@ -26,5 +31,9 @@ export default[Input,
     FormCheck,
     DataNotFound,
     RouterLinkBar,
-    ProductItem
+    ProductItem,
+    StarEvaluation,
+    StarResult,
+    AddButton,
+    RemoveButton
 ]

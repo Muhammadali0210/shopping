@@ -11,7 +11,7 @@ export default {
 <style scoped>
 .button{
     padding: 20px 32px;
-    background-color: transparent;
+    background-color: var(--grey-f6);
     border-radius: 100px;
     border: none;
     cursor: pointer;

@@ -85,6 +85,12 @@
     font-weight: 600;
     font-family: PlusJakartaSans;
 }
+.text-fz14-lh24-fw700-p{
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    font-family: PlusJakartaSans;
+}
 .text-fz14-lh24-fw400-p{
     font-size: 14px;
     line-height: 24px;

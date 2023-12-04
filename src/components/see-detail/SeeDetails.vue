@@ -7,6 +7,7 @@
             <ProductAbout />
         </div>
 
+        <ProductData />
 
         <div class="relate-products-wrap">
             <div class="main-title">Relate Products</div>
@@ -18,6 +19,7 @@
 </template>
 <script>
 import ProductAbout from './ProductAbout.vue';
+import ProductData from './ProductData.vue';
 import ProductSlider from './ProductSlider.vue';
 
 
@@ -52,7 +54,7 @@ export default {
             ],
         };
     },
-    components: { ProductSlider, ProductAbout }
+    components: { ProductSlider, ProductAbout, ProductData }
 }
 </script>
 <style>
@@ -62,7 +64,7 @@ export default {
     gap: 100px;
     align-items: center;
     justify-content: start;
-    border: 2px solid rgb(8, 206, 41);
+    /* border: 2px solid rgb(8, 206, 41); */
 }
 
 

@@ -52,33 +52,8 @@
             </div>
         </div>
     
-        <div class="nav_opacity" :class="[{active: active}]">
-            <div class="opacity_content">
-                <div class="close_icon cursor" @click="active = !active">
-                    <img src="../../icons/close.svg" alt="close">
-                </div>
-                <div class="login-page" v-if="login">
-                    <div class="title text-fz40-lh50-fw400-a" style="text-align: center; margin: 8px 0 24px;">Login</div>
-                    <form action="#">
-                        <Input label="Username" placeholder="Username or Email Adress" type="email"/>
-                        <InputPassword label="Password" placeholder="Password"/>
-                        <div class="foget-password">
-                            <div style="display: flex;">
-                                <FormCheck />
-                                <div class="text-fz12-lh24-fw500-p text-grey" style="margin-left: 8px;">Remember me</div>
-                            </div>
-                            <div class="form-likn cursor">Forgot Password</div>
-                        </div>
-                        <PrimaryButton>Login</PrimaryButton>
-                        <div class="form_end_link">
-                            <div class="text-fz12-lh24-fw500-p text-grey">Not a mamber?</div>
-                            <div class="form-likn cursor">Register</div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    
+        <Registration />
+
         <div class="nav_hamburger-page" :class="[{ham_active: ham_active}]">
             <div class="ham_show">
                 <div class="ham_search">
@@ -114,27 +89,28 @@
 </template>
 
 <script>
+import Registration from './Registration.vue';
+
 export default {
     data() {
         return {
-            active: false,
-            login: true,
-            register: false,
             hamburger: true,
             ham_active: false,
             bag: false,
         };
     },
     methods: {
-        hamburgerNav(){
+        hamburgerNav() {
             this.ham_active = !this.ham_active;
-            if(this.ham_active){
+            if (this.ham_active) {
                 document.getElementById("app").style.position = 'fixed';
-            } else {
+            }
+            else {
                 document.getElementById("app").style.position = 'relative';
             }
         }
     },
+    components: { Registration }
 }
 </script>
 
@@ -198,7 +174,7 @@ export default {
 }
 
 /* Login , register, bag, and hamburger pages */
-.nav_opacity{
+/* .nav_opacity{
     position: absolute;
     top: 0;
     left: 0;
@@ -232,13 +208,12 @@ export default {
 }
 .nav_opacity.active .opacity_content{
     transform: perspective(1000px) translate3d(0, 0, 0);
-}
-.close_icon{
+} */
+/* .close_icon{
     position: absolute;
     top: 23px;
     right: 22px;
 }
-/* Login page */
 .form_end_link{
     display: flex;
     justify-content: center;
@@ -249,7 +224,7 @@ export default {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 24px;
-}
+} */
 /* hamburger page */
 .nav_hamburger-page{
     display: none;
@@ -347,9 +322,9 @@ export default {
     /* 88% */
 }
 @media (max-width: 500px) {
-    .nav_opacity.active .opacity_content{
+    /* .nav_opacity.active .opacity_content{
         width: 92%;
-    }
+    } */
     .nav_hamburger-page .ham_show{
         width: 92%;
     }

@@ -1,12 +1,12 @@
 <template>
     <div class="product-slider-wrap">
         <div class="product-main-photo">
-            <img :src="productDetailImg[mainFoto].detailImg" alt="img">
+            <img :src="productDetailImg[mainFoto].img" alt="img">
         </div>
         <div class="detail-slider-bottom-bar">
-            <div class="gradien-color cursor" v-for="productDetailImg in productDetailImg" @click="photoItem(productDetailImg.id)" :class="[{activefoto: productDetailImg.id == mainFoto+1}]">
+            <div class="gradien-color cursor" v-for="productDetailImg in productDetailImg" @click="photoItem(productDetailImg.id)" :class="[{activefoto: productDetailImg.id == mainFoto - 1}]">
                 <div class="detail-slider-bottom-photo">
-                    <img :src="productDetailImg.detailImg" alt="img">
+                    <img :src="productDetailImg.img" alt="img">
                 </div>
             </div>
         </div>
@@ -16,43 +16,34 @@
 export default {
     data() {
         return {
-            mainFoto: 0,
-            productDetailImg:[
-                {
-                    id: "1",
-                    detailImg: "../src/images/shoes1.png",
-                },
-                {
-                    id: "2",
-                    detailImg: "../src/images/shoes2.png",
-                },
-                {
-                    id: "3",
-                    detailImg: "../src/images/shoes3.png",
-                },
-                {
-                    id: "4",
-                    detailImg: "../src/images/shoes4.png",
-                },
-            ],
+            mainFoto: 2,
+            productDetailImg: this.$store.state.product[0].image,
         }
     },
     methods: {
         photoItem(id){
-            this.mainFoto = id - 1;
-        }
+            this.mainFoto = id + 1;
+            console.log(id);
+
+            alert(id)
+        },
     },
+
+    // mounted(){
+    //     this.productDetailImg = this.$store.state.product[0].image
+    //     console.log(this.productDetailImg);
+    // },
     
 }
 </script>
 <style>
 .product-slider-wrap{
     width: 460px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 .product-main-photo{
     width: 100%;
-    height: 570px;
+    height: 470px;
     background-color: var(--grey-f6);   
 }
 .product-main-photo img{
