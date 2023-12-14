@@ -53,7 +53,8 @@ export default {
 .radio-label:before {
   content: "★";
   display: inline-block;
-  font-size: 32px;
+  font-size: 40px;
+  letter-spacing: 20px;
 }
 
 .radio-input:checked ~ .radio-label {

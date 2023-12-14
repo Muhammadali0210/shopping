@@ -4,7 +4,7 @@
             <img :src="productDetailImg[mainFoto].img" alt="img">
         </div>
         <div class="detail-slider-bottom-bar">
-            <div class="gradien-color cursor" v-for="productDetailImg in productDetailImg" @click="photoItem(productDetailImg.id)" :class="[{activefoto: productDetailImg.id == mainFoto - 1}]">
+            <div class="gradien-color cursor" v-for="productDetailImg in productDetailImg" @click="photoItem(productDetailImg.id)" :class="[{activefoto: productDetailImg.id == mainFoto + 1}]">
                 <div class="detail-slider-bottom-photo">
                     <img :src="productDetailImg.img" alt="img">
                 </div>
@@ -16,16 +16,13 @@
 export default {
     data() {
         return {
-            mainFoto: 2,
+            mainFoto: 0,
             productDetailImg: this.$store.state.product[0].image,
         }
     },
     methods: {
         photoItem(id){
-            this.mainFoto = id + 1;
-            console.log(id);
-
-            alert(id)
+            this.mainFoto = id - 1;
         },
     },
 

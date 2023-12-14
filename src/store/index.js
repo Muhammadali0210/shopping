@@ -34,7 +34,7 @@ const store = createStore({
           "add_bag": false,
           "add_wishlist": false,
           "reviwes": 13, 
-          "sky_rate_result": 3.2,
+          "sky_rate_result": 2.5,
           "coments": [
             {
               "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. A justo turpis massa tristique augue dignissim volutpat. Quis ultricies eu libero tortor dictumst.",

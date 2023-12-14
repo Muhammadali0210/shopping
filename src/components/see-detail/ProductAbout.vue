@@ -33,7 +33,7 @@ export default {
 <style>
 .about-product-wrap {
     width: 700px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 100%;
 
 }

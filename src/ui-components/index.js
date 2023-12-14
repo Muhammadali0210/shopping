@@ -16,9 +16,12 @@ import StarEvaluation from './StarEvaluation.vue'
 import StarResult from './StarResult.vue'
 import AddButton from './AddButton.vue'
 import RemoveButton from './RemoveButton.vue'
+import InputReview from './InputReview.vue'
+import Comment from './Comment.vue'
 
 export default[
     Input,
+    InputReview,
     Logo,
     Textarea,
     PrimaryButton,
@@ -35,5 +38,6 @@ export default[
     StarEvaluation,
     StarResult,
     AddButton,
-    RemoveButton
+    RemoveButton,
+    Comment
 ]
