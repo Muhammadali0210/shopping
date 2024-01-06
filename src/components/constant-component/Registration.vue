@@ -5,7 +5,7 @@
                     <img src="../../icons/close.svg" alt="close">
                 </div>
                 <div class="login-page" v-if="login">
-                    <div class="title text-fz40-lh50-fw400-a" style="text-align: center; margin: 8px 0 24px;">Login</div>
+                    <div class="title text-fz40-lh50-fw400-a" style="text-align: center; margin: 8px 0 24px;">Register</div>
                     <form action="#">
                         <Input label="Username" placeholder="Username or Email Adress" type="email"/>
                         <Input label="Username" placeholder="Username or Email Adress" type="email"/>
@@ -33,7 +33,7 @@ export default {
         return {
             register: true,
             login: true,
-            registrationContent: false,
+            registrationContent: true,
             registerTitle: "Login",
             registerLinkTitle: "Register",
         }

@@ -56,11 +56,11 @@ export default{
 }
 .select-all{
   width: 210px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 .product-name{
   margin: 0 40px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 200px;
 }
 </style>

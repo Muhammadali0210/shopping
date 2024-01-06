@@ -49,7 +49,7 @@ export default {
 }
 .first-content .product-title-wrap{
     margin: 0 40px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 200px;
 }
 .image-wrap{
@@ -57,7 +57,7 @@ export default {
     align-items: center;
     justify-content: space-between;
     width: 210px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 .chooser{
     margin: 0 22px;
